@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lone Link - VR arcade space shooter</title>
+<meta name="description" content="Lone Link is a VR arcade space shooter for Meta Quest. Steer your ship by hand, dodge the fire and take down the flagship.">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root {
+    --bg: #070a17;
+    --bg2: #120b2b;
+    --card: rgba(255, 255, 255, 0.05);
+    --line: rgba(255, 255, 255, 0.12);
+    --text: #e8ecf8;
+    --muted: #9aa5c4;
+    --accent: #4fe3ff;
+    --gold: #ffd84d;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: radial-gradient(1200px 700px at 70% -10%, #1d1450 0%, transparent 60%), linear-gradient(180deg, var(--bg2), var(--bg) 60%);
+    background-attachment: fixed;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+
+  header.hero { padding: 64px 0 40px; text-align: center; }
+  .hero img { width: 220px; height: 220px; border-radius: 28px; box-shadow: 0 0 60px rgba(79, 227, 255, 0.25), 0 0 0 1px var(--line); }
+  .hero h1 { font-size: clamp(2.4rem, 7vw, 4rem); letter-spacing: 0.08em; margin: 28px 0 8px; text-transform: uppercase; text-shadow: 0 0 30px rgba(79, 227, 255, 0.45); }
+  .hero .tagline { font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
+  .badge { display: inline-block; padding: 10px 22px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 600; letter-spacing: 0.04em; }
+
+  section { padding: 36px 0; }
+  h2 { font-size: 1.6rem; margin: 0 0 18px; color: var(--gold); letter-spacing: 0.03em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; color: var(--accent); }
+  .card p { margin: 0; color: var(--muted); }
+  .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  ul.clean { list-style: none; margin: 0; padding: 0; }
+  ul.clean li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+  ul.clean li b { color: var(--text); }
+  ul.clean li span { color: var(--muted); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 56px; color: var(--muted); font-size: 0.95rem; text-align: center; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="assets/icon.png" alt="Lone Link ship">
+    <h1>Lone Link</h1>
+    <p class="tagline">A VR arcade space shooter. Steer your ship by hand, dodge the fire and take down the flagship.</p>
+    <span class="badge">For Meta Quest</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>The game</h2>
+    <p>Your ship follows your hand. Move it to dodge the swarm, push it forward and pull it back to dive into the fight or retreat, and let the auto-cannon do the shooting. Fight through 50 waves of enemy fleets, asteroid fields and four giant bosses to reach the final flagship, then keep going in Endless mode.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card"><h3>Arcade and Fitness</h3><p>In Arcade your ship takes the hits. In Fitness the bullets are aimed at you: dodge with your whole body.</p></div>
+      <div class="card"><h3>Three difficulties</h3><p>Easy, Normal and Hard change how special weapons are collected and upgraded.</p></div>
+      <div class="card"><h3>Special weapons</h3><p>Homing missiles, laser beam, energy wave, reflector shield and a time-slowing field. Catch the same chip again to upgrade it and trigger a powerful bonus.</p></div>
+      <div class="card"><h3>Bosses and flagship</h3><p>Four giant bosses, then the final flagship in three phases.</p></div>
+      <div class="card"><h3>Power-ups</h3><p>Weapon levels, shields, rapid fire, extra lives and screen-clearing bombs.</p></div>
+      <div class="card"><h3>Made for comfort</h3><p>Stand or sit, no artificial movement. Left-handed option and local high scores for each mode.</p></div>
+    </div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Controls</h2>
+      <ul class="clean">
+        <li><b>Move your hand</b> <span>- fly the ship</span></li>
+        <li><b>Push / pull your hand</b> <span>- ship goes forward / back</span></li>
+        <li><b>Grip</b> <span>- drop a bomb</span></li>
+        <li><b>Trigger</b> <span>- next weapon (Easy)</span></li>
+        <li><b>Menu button</b> <span>- pause</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Details</h2>
+      <ul class="clean">
+        <li><b>Platform</b> <span>- Meta Quest (standing or sitting)</span></li>
+        <li><b>Players</b> <span>- single player, offline</span></li>
+        <li><b>Input</b> <span>- Touch controllers</span></li>
+        <li><b>Developer</b> <span>- MT &amp; Sons</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 MT &amp; Sons. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:morozma@gmail.com">Contact and support</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
